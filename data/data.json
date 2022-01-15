@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "type": "my room",
+            "name": "스터디책상",
+            "price": "79,900원",
+            "img": "../image/스터디책상.PNG"
+        },
+        {
+            "type": "my room",
+            "name": "스터디의자",
+            "price": "65,900원",
+            "img": "../image/스터디의자.PNG"
+        },
+        {
+            "type": "my room",
+            "name": "침대",
+            "price": "289,760원",
+            "img": "../image/침대.PNG"
+        },
+        {
+            "type": "living room",
+            "name": "소파",
+            "price": "399,000원",
+            "img": "../image/소파.PNG"
+        },
+        {
+            "type": "kitchen",
+            "name": "식탁",
+            "price": "89,900원",
+            "img": "../image/식탁.PNG"
+        },
+        {
+            "type": "kitchen",
+            "name": "렌지대",
+            "price": "55,900원",
+            "img": "../image/렌지대.PNG"
+        },
+        {
+            "type": "entrance",
+            "name": "신발장",
+            "price": "51,900원",
+            "img": "../image/신발장.PNG"
+        }
+    ]
+}
