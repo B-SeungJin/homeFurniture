@@ -1,4 +1,4 @@
-# homeFurniture
+# 가구 쇼핑몰 (JavaScript/HTML/CSS)
 배운 자바스크립트를 통해 나만의 프로젝트를 구현하였다.
 
 ## 기능
