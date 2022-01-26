@@ -19,6 +19,10 @@
 ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
 
 /* Header */
 header {
@@ -27,6 +31,29 @@ header {
     font-size: var(--font-large);
     cursor: pointer;
     margin: 10px;
+}
+.menu {
+    display: flex;
+    font-size: var(--font-medium);
+}
+.menu li {
+    padding: 8px 12px;
+}
+.menu li:hover {
+    font-size: var(--font-large);
+}
+.icons {
+    display: flex;
+    padding: 8px;
+}
+.icons i {
+    padding: 8px;
+}
+.toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: var(--font-large);
 }
 
 /* Buttons */
@@ -52,7 +79,7 @@ header {
 .item {
     margin: 10px;
 }
-.item_thumbnail {
+.item__thumbnail {
     display: block;
     width: 400px;
     height: 400px;
@@ -60,6 +87,34 @@ header {
 }
 .item span {
     font-size: var(--font-small);
+}
+.item.invisible {
+    background-color: var(--color-white);
+    display: none;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons {
+        display: none;
+        justify-content: center;
+    }
+    .toogleBtn {
+        display: block;
+    }
+
+    .menu.active,
+    .icons.active {
+        display: flex;
+    }
 }
 
 

@@ -1,3 +1,12 @@
+const toggleBtn = document.querySelector('.toogleBtn');
+const menu = document.querySelector('.menu');
+const icons = document.querySelector('.icons');
+
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    icons.classList.toggle('active');
+});
+
 function loadItems() {
     return fetch('data/data.json')
        .then(responce => responce.json())
@@ -12,35 +21,23 @@ function displayItems(items) {
 function createHTMLString(item) {
     return `
     <li class="item">
-        <img src="${item.img}" alt="${item.name}" class="item_thumbnail"/>
-        <span class="item__description">${item.name}</span>
-        <span class="item__description">${item.price}</span>
+        <img src="${item.image}" alt="${item.type}" class="item__thumbnail"/>
+        <span class="item__description">${item.name}, ${item.price}</span>
     <li>
     `;
 }
 
 function onButtonClick(event, items) {
-    const target = event.target;
-    const key = target.dataset.key;
-    const value = target.dataset.value;
+    const dataset = event.target.dataset;
+    const key = dataset.key;
+    const value = dataset.value;
 
     if (key == null || value == null) {
         return;
     }
-    updateItems(items, key, value);
-}
 
-function updateItems(items, key, value) {
-    items.forEach(item => {
-        if (item.dataset[key] === value) {
-            item.classList.remove('invisible');
-        }
-        else {
-            item.classList.add('invisible');
-        }
-    });
+    displayItems(items.filter(item => item[key] === value));
 }
-
 
 function setEventListeners(items) {
     const logo = document.querySelector('.logo');
