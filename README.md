@@ -13,3 +13,6 @@
 ## 느낀 점
 자바스크립트의 문법과 웹브라우저에서 사용하는 자바스크립트와는 많이 다르다는 것을 느꼈다. 이 부분과 함께
 html, css도 능숙하게 사용할 수 있도록 익혀야겠다. +처음으로 오류를 발견하였다. 
+![image](https://user-images.githubusercontent.com/96096917/214865614-93293cf0-dd5c-4820-8b62-64c7898cca4d.png)
+![image](https://user-images.githubusercontent.com/96096917/214865907-bf505f5d-291e-4a13-85af-b67d13f5e96d.png)
+
